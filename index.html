@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacBook variable Product Page</title>
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="container pt-5">
+            <div class="row mx-3 ">
+                <div class="col-lg-6 ">
+                    <img class="img-fluid" src="images/mac1.png" alt="">
+                </div>
+                <!-- iMc image -->
+                <div class="col-lg-6">
+                    <h1>Customize your Ble 24 inch <br>iMac with apple M1 chip</h1>
+                    <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and
+                        16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic
+                        Mouse
+                        Magic Keyboard - US English
+                    </p>
+
+                    <!-- iMc memory -->
+                    <div class="memory ">
+                        <p class="fw-bolder mt-2">Memory</p>
+                        <button id="8gb-memory" class="mb-2">8GB unified memory</button>
+                        <button id="16gb-memory">16GB unified memory</button>
+                    </div>
+
+                    <!-- iMc storage -->
+                    <div class="storage mt-5">
+                        <p class="fw-bolder">Storage</p>
+                        <button id="storage-256gb">256GB SSD storage</button>
+                        <button id="storage-512gb" class="mt-2 mb-2">512GB SSD storage</button>
+                        <button id="storage-1tb">1TB SSD storage</button>
+                    </div>
+
+                    <!-- iMc delivery option -->
+                    <div class="delivery-option mt-5">
+                        <p class="fw-bolder">Choose Your delivery option</p>
+                        <button id="delivery-free" class="mb-2">Friday 25 Agu free delivery</button>
+                        <button id="delivery-with-charge">Friday 21 Agu free delivery charge $20</button>
+                    </div>
+
+                    <!-- iMc price -->
+                    <div class="price mt-5">
+                        <table class="table">
+                            <tbody>
+                                <tr class="fw-bolder">
+                                    <td colspan="2">Best Price</td>
+                                    <td>$<span id="best-price">1299</span></td>
+                                </tr>
+                                <tr class="fw-bolder">
+                                    <td colspan="2">Extra memory Cost</td>
+                                    <td>$<span id="extra-memory-cost">0</span></td>
+                                </tr>
+                                
+                                <tr class="fw-bolder">
+                                    <td colspan="2">Extra store cost</td>
+                                    <td>$<span id="extra-store-cost">0</span></td>
+                                </tr>
+                                <tr class="fw-bolder">
+                                    <td colspan="2">Extra delivery  cost</td>
+                                    <td>$<span id="extra-delivery-cost">0</span></td>
+                                </tr>
+                            <tfoot class="fw-bolder">
+                                <td colspan="2">Total Price</td>
+                                <td>$<span id="total-price">1299</span></td>
+                            </tfoot>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- pomo code -->
+                    <div class="add-pomo-price mt-5 mb-3">
+                        <p>Add pomo price</p>
+                        <input id="pomo-input" type="text">
+                        <button id="pomo-apply-btn" class="mt-2">Apply</button>
+                    </div>
+
+                </div>
+
+                <hr>
+                <!-- Total with pomo -->
+                <div class="total text-center">
+                    <h2>Total:$<span id="final-total">1299</span></h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- js link -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
